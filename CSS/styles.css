@@ -1,49 +1,84 @@
-body{
-  overflow: hidden;
+body {
+  overflow-x: hidden;
+  background-color: #F0ECE3;
 }
-#profile-pic{
-  width: 501px;
-  height: 694px;
+.col-lg-5{
+  padding: 0;
+}
+#profile-pic {
+  max-width: 100%;
+  padding-left: 3vw;
+  display: block;
 }
 
-.nav-item{
-  font-family: 'Raleway', sans-serif;
+#logo{
+  width: 2vw;
+  margin-right: 7vw;
+}
+
+#git{
+  width: 1.2vw;
+  margin: 0 0 0 3vw;
+}
+
+#linkedin{
+  width: 1.2vw;
+  margin: 0 1vw 0 1vw;
+}
+
+.nav-item {
+  font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 23px;  
+  font-size: 1.2vw;
+  line-height: 23px;
 }
 
-.nav-link{
-  color:black;
+.nav-link {
+  color: black;
 }
 
-.title{
-  text-align: right;
-  font-family: 'Poppins', sans-serif;
-  padding-top: 125px;
-
+.section-links{
+  margin:2vw
 }
 
-.lg-title{
+.title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-right: 3vw;
+  margin-left: auto;
+  padding-top: 15px;
+}
+
+.lg-title {
   font-style: normal;
   font-weight: 500;
-  font-size: 55px;
+  font-size: 3.5vw;
 }
 
-.sm-title{
+.sm-title {
   font-style: normal;
   font-weight: 500;
-  font-size: 45px;
-  padding-bottom: 25px;
+  font-size: 3vw;
+  padding-bottom: .6vw;
 }
 
-.title-description{
-  font-family: 'Raleway';
+.profile-picture{
+  margin-right: auto;
+}
+
+.typing-change{
+  color: #ADC2DB;
+}
+
+.title-description {
+  font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 1vw;
 }
-.nav-bar{
+.nav-bar {
   padding-bottom: 1%;
 }
