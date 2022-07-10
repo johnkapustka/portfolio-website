@@ -1,9 +1,9 @@
-
+body{
+  overflow: hidden;
+}
 #profile-pic{
   width: 501px;
   height: 694px;
-  left: 750px;
-  top: 165px;
 }
 
 .nav-item{
@@ -19,27 +19,31 @@
 }
 
 .title{
+  text-align: right;
   font-family: 'Poppins', sans-serif;
-  padding-left: 8%;
+  padding-top: 125px;
+
 }
 
 .lg-title{
   font-style: normal;
   font-weight: 500;
   font-size: 55px;
-  line-height: 82px;
-  
 }
 
 .sm-title{
   font-style: normal;
   font-weight: 500;
   font-size: 45px;
-  line-height: 68px;
+  padding-bottom: 25px;
 }
 
+.title-description{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
 .nav-bar{
-  padding-top: 1%;
   padding-bottom: 1%;
 }
-
