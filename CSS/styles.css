@@ -21,6 +21,10 @@
 
   --work-image-size: 300px;
   --work-image-padding: 65px;
+  --work-margin-bottom: 25px;
+  --work-title-margin: 225px 0 75px;
+  --card-text-margin: 0;
+  --card-title-size: 1.5rem;
 }
 
 @media (max-width: 1382px){
@@ -43,10 +47,14 @@
     --menu-bar:none;
     --logo-margin: 0;
     --margin-correct: 23px;
-    --navbar-pad: 40px;
+    --navbar-pad: 100px;
 
     --work-image-size: 240px;
     --work-image-padding: 55px;
+    --work-margin-bottom: 25px;
+    --work-title-margin: 175px 0 50px;
+    --card-text-margin: 0;
+    --card-title-size: 1rem;
   }
 }
 
@@ -70,10 +78,14 @@
     --menu-bar:none;
     --logo-margin: 0;
     --margin-correct: 15px;
-    --navbar-pad: 25px;
+    --navbar-pad: 50px;
 
     --work-image-size: 160px;
     --work-image-padding: 35px;
+    --work-margin-bottom: 25px;
+    --work-title-margin: 125px 0 40px;
+    --card-text-margin: 0;
+    --card-title-size: .75rem;
   }
 }
 
@@ -102,6 +114,10 @@
 
     --work-image-size: 150px;
     --work-image-padding: 30px;
+    --work-margin-bottom: 20px;
+    --work-title-margin: 100px 0 25px;
+    --card-text-margin: 0 50px;
+    --card-title-size: .75rem;
   }
 }
 
@@ -182,7 +198,7 @@ body {
 }
 
 .toggler-styles{
-  width: 2vw;
+  width: 12px;
   border: none;
 }
 
@@ -230,10 +246,10 @@ body {
 }
 
 .work-title{
-  margin: 200px 0 50px;
+  margin: var(--work-title-margin);
   text-align: center;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: var(--ft-subheading)
 }
 
@@ -243,6 +259,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: var(--ft-text);
+  margin-bottom: var(--work-margin-bottom);
 }
 .card-img{
   width: var(--work-image-size);
@@ -250,6 +267,17 @@ body {
   margin: 0 auto;
   padding: var(--work-image-padding);
   border-radius: 25%;
+}
+
+.card-title{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: var(--card-title-size);
+}
+
+.card-text{
+  padding: var(--card-text-margin);
 }
 
 #center-card{
