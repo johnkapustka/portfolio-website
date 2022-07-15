@@ -262,11 +262,12 @@ body {
   margin: var(--margin-desc);
 }
 
-.work-title{
+#work-anchor{
   margin: var(--work-title-margin);
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: var(--ft-subheading)
 }
 
@@ -281,7 +282,6 @@ body {
   font-weight: 400;
   font-size: var(--ft-text);
   margin-bottom: var(--work-margin-bottom);
-
 }
 
 .card-img{
@@ -289,7 +289,7 @@ body {
   background-color: #ADC2DB;
   margin: 0 auto;
   padding: var(--work-image-padding);
-  border-radius: 25%;
+  border-radius: 50px;
 }
 
 .card-title{
@@ -310,6 +310,48 @@ body {
 .right-work{
   margin: var(--right-work-margin);
 }
+
 #center-card{
   background-color: #E1DE9E;
+}
+
+#contact-anchor{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--ft-subheading);
+  margin-bottom: 50px;
+}
+
+.contact-form{
+  margin: 100px auto ;
+  padding: 75px 100px;
+  border-radius: 100px;
+  text-align: center;
+  width: 550px;
+  background-color: #E1DE9E;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--ft-text);
+}
+
+.inputBox{
+  width: 100%;
+}
+
+.input-container{
+  margin-bottom: 20px;
+}
+
+.send-button{
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+  padding: 5px
+}
+
+.send-button:hover{
+  background-color: grey;
 }
