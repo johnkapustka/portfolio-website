@@ -29,6 +29,9 @@
   --card-row-margin: 0 130px;
   --left-work-margin: 0 130px 0 auto;
   --right-work-margin: 0 auto 0 130px;
+
+  --contact-card-width: 550px;
+  --contact-margin: 225px auto 75px;
 }
 
 @media (max-width: 1382px){
@@ -63,6 +66,9 @@
     --card-row-margin: 0 30px;
     --left-work-margin: 0 80px 0 auto;
     --right-work-margin: 0 auto 0 80px;
+
+    --contact-card-width: 450px;
+    --contact-margin: 175px auto 50px;
   }
 }
 
@@ -98,6 +104,9 @@
     --card-row-margin: 0 5px;
     --left-work-margin: 0 50px 0 auto;
     --right-work-margin: 0 auto 0 50px;
+
+    --contact-card-width: 400px;
+    --contact-margin: 125px auto 40px;
   }
 }
 
@@ -134,6 +143,9 @@
     --card-row-margin: 0 75px;
     --left-work-margin: 0;
     --right-work-margin: 0;
+
+    --contact-card-width: 400px;
+    --contact-margin: 100px auto 25px;
   }
 }
 
@@ -315,21 +327,54 @@ body {
   background-color: #E1DE9E;
 }
 
+.work-project-links{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.work-project-links:hover{
+  color: gray;
+}
+
+#resume-anchor{
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--ft-subheading);
+  margin: var(--work-title-margin);
+}
+
+.resume-page{
+  text-align: center;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: var(--ft-text);
+}
+
+.resume-download{
+  border-radius: 15px;
+  border: none;
+  padding: 10px;
+  background-color: #ADC2DB;
+}
+
 #contact-anchor{
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: var(--ft-subheading);
-  margin-bottom: 50px;
 }
 
 .contact-form{
-  margin: 100px auto ;
+  margin: var(--contact-margin);
   padding: 75px 100px;
   border-radius: 100px;
   text-align: center;
-  width: 550px;
+  width: var(--contact-card-width);
   background-color: #E1DE9E;
   font-family: "Raleway";
   font-style: normal;
