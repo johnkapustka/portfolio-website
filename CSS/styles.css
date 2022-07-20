@@ -156,6 +156,12 @@ body {
 
 #profile-pic {
   width: var(--pp-size);
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+#profile-pic.appear{
+  opacity: 1;
 }
 
 #logo{
@@ -359,6 +365,10 @@ body {
   border: none;
   padding: 10px;
   background-color: #ADC2DB;
+}
+
+.resume-download:hover{
+  background-color: gray;
 }
 
 #contact-anchor{
