@@ -1,4 +1,10 @@
-let options = {}
+const fadeIn = document.querySelectorAll(".fade-in");
+const slideIn = document.querySelectorAll(".fade-left .fade-right")
+
+
+const options = {
+  threshold: 0,
+}
 
 const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) 
 {
@@ -7,11 +13,19 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
       return;
     } else{
       entry.target.classList.add("appear")
-      observer.unobserve(entry.target)
+      appearOnScroll.unobserve(entry.target)
     }
   });
 ;},
 options);
 
-const faded = document.querySelector("#profile-pic");
-appearOnScroll.observe(faded);
+fadeIn.forEach(element => {
+  appearOnScroll.observe(element);
+});
+
+slideIn.forEach(element => {
+  appearOnScroll.observe(element);
+});
+
+
+

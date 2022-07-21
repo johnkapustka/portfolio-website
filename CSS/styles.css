@@ -156,12 +156,35 @@ body {
 
 #profile-pic {
   width: var(--pp-size);
-  opacity: 0;
-  transition: opacity 250ms ease-in;
 }
 
-#profile-pic.appear{
+.fade-in{
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-in.delay{
+  transition-delay: 750ms;
+}
+
+.fade-in.appear{
   opacity: 1;
+}
+
+.fade-right{
+  transform: translateX(50%);
+  transition: transform 750ms ease-in
+}
+.fade-right.appear{
+  transform: translateX(0);
+}
+
+.fade-left{
+  transform: translateX(-50%);
+  transition: transform 750ms ease-in
+}
+.fade-left.appear{
+  transform: translateX(0);
 }
 
 #logo{
