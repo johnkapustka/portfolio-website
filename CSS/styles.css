@@ -160,11 +160,11 @@ body {
 
 .fade-in{
   opacity: 0;
-  transition: opacity 500ms ease-in;
+  transition: opacity 1s ease-in;
 }
 
 .fade-in.delay{
-  transition-delay: 750ms;
+  transition-delay: 1s;
 }
 
 .fade-in.appear{
@@ -173,7 +173,7 @@ body {
 
 .fade-right{
   transform: translateX(50%);
-  transition: transform 750ms ease-in
+  transition: transform 1s ease-in
 }
 .fade-right.appear{
   transform: translateX(0);
@@ -181,7 +181,7 @@ body {
 
 .fade-left{
   transform: translateX(-50%);
-  transition: transform 750ms ease-in
+  transition: transform 1s ease-in
 }
 .fade-left.appear{
   transform: translateX(0);

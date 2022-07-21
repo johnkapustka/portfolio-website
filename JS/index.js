@@ -1,5 +1,5 @@
 const fadeIn = document.querySelectorAll(".fade-in");
-const slideIn = document.querySelectorAll(".fade-left .fade-right")
+const slideIn = document.querySelectorAll(".fade-left, .fade-right")
 
 
 const options = {
@@ -14,6 +14,7 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
     } else{
       entry.target.classList.add("appear")
       appearOnScroll.unobserve(entry.target)
+      console.log(entry.target)
     }
   });
 ;},
